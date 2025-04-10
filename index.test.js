@@ -18,4 +18,18 @@ describe('calculateSquare', () => {
 
        expect(result).toBe(expected);
     });
+    it('should return the square with z',() => {
+        //given
+        const x = 2;
+        const y = 3;
+        const z = 4;
+
+        //when
+        const result = calculateSquare(x, y, z);
+
+        //then
+        const expected = 24;
+
+        expect(result).toBe(expected);
+    });
 });
